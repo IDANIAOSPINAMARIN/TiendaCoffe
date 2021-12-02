@@ -1,0 +1,174 @@
+body {
+  margin: 0em;
+  font-family: "Noto Sans", sans-serif;
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(224, 229, 245, 0.75), rgba(224, 229, 245, 0.75)),
+   url(https://media.istockphoto.com/photos/flowers-on-the-shore-of-lake-geneva-picture-id1280003274?b=1&k=20&m=1280003274&s=170667a&w=0&h=bFSswo40EQIa6Ohj7iyXSXbo4Fh2Ud3fxGnFfzUsLqU=);
+  background-size:cover;
+	background-repeat: no-repeat; 
+  background-color: rgba(61, 4, 4, 0.6);
+  
+  }
+
+  
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Fjalla One" sans-serif;
+}
+
+
+.cover {
+  height: 400px;
+  background-image: url(https://images.unsplash.com/photo-1461988279488-1dac181a78f9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80);
+  color: white;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: darken;
+}
+
+nav ul li{
+  list-style: none;
+  margin-left: 20px;
+  padding: 20px 0;
+  float: left;
+  margin-right: 20px;
+}
+
+
+.cover-small {
+  height: 200px;
+  background-blend-mode: normal;
+}
+
+.card{
+  border:0 !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.card-title {
+  min-height: 3rem;
+}
+
+.card-text {
+  min-height: 10rem;
+}
+
+.product-stripe,
+.slider {
+  overflow-x: scroll;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.stripe-container,
+.stripe-container {
+  display: flex;
+}
+
+.stripe-container .card {
+  width: 300px;
+  flex-shrink: 0;
+  margin-right: 1rem;
+}
+
+.responsive-iframe {
+  position: relative;
+  padding-top: 56.25%;
+}
+
+.responsive-iframe iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.btn{
+  font-weight:bold;
+  text-transform:uppercase;
+}
+.card-content{
+  min-height:220px;
+}
+.section-margin{
+  margin: 100px 0;
+}
+.bg-app-accent{
+  background-color: #7fbbca !important;
+}
+.bg-app-ink{
+  background-color: #2d3d8b !important;
+}
+.text-app-ink{
+  color: #2d3d8b !important;
+}
+
+.infinite-container{
+  overflow-y:scroll;
+}
+
+.infinite-container > div{
+  display:flex;
+  flex-wrap: nowrap;
+}
+.infinite-container .product{
+  margin-right:2em;
+}
+
+.slider {
+  overflow-x: hidden;
+}
+
+.infinite-container.slider  > div{
+  transform:translateX(0);
+  animation: slider 10s infinite;
+}
+
+.image-container {
+  width: 100%;
+  padding-top: 56.25%;
+  background-size: cover;
+  background-position: center;
+  flex-shrink: 0;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  background-size: cover;
+  background-position: center;
+  flex-shrink: 0;
+  margin: 0 auto;
+}
+
+@keyframes slider{
+  0%{
+    transform:translateX(0);
+  }
+  20%{
+    transform:translateX(0);
+  }
+  25%{
+    transform:translateX(-100%);
+  }
+  45%{
+    transform:translateX(-100%);
+  }
+  50%{
+    transform:translateX(-200%);
+  }
+  70%{
+    transform:translateX(-200%);
+  }
+  75%{
+    transform:translateX(-300%);
+  }
+  95%{
+    transform:translateX(-300%);
+  }
+}
